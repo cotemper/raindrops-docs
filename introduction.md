@@ -2,9 +2,11 @@
 
 The Solana ecosystem has a fragmented and very customized way of storing in-game assets on chain, with as many different formats as there are play-2-earn games. However, the methods of storing ordinary NFT data _are_ standardized in the [Metaplex Protocol](https://docs.metaplex.com). The aim of Raindrops Protocol is to do the same thing for game assets.
 
-The Raindrops Protocol is a series of five contracts that govern on-chain or proof-on-chain data specifically for games, allowing any player or item to be interchangeable with any game client that can process them.
+The Raindrops Protocol is a series of five a la carte contracts that govern on-chain or proof-on-chain data specifically for games, allowing any player or item to be interchangeable with any game client that can process them.
 
-Following the [composability](https://en.wikipedia.org/wiki/Composability) doctrine, the Raindrops Protocol lives literally on top of the Metaplex Protocol, further decorating existing NFTs with new metadata about whether they are a [Player](player/overview.md), an [Item](item/overview.md), or both! All contracts within the Protocol are designed to be composed with other Solana contracts enforcing game-specific rules.
+Following the [composability](https://en.wikipedia.org/wiki/Composability) doctrine, the Raindrops Protocol lives literally on top of the Metaplex Protocol, further decorating existing NFTs with new metadata about whether they are a [Player](broken-reference), an [Item](broken-reference), or both! All contracts within the Protocol are designed to be composed with other Solana contracts enforcing game-specific rules.
+
+Each contract was built to work together to form a complete protocol that satisfies the needs of blockchain-based games, when using raindrops you retain the choice to include just the parts you need to build your game.
 
 The protocol source is available on GitHub:
 
@@ -38,36 +40,26 @@ Guides are easy-to-follow steps/recipes for how to integrate various common need
 [overview.md](guides/overview.md)
 {% endcontent-ref %}
 
-## Contract References
+## Contracts
 
-Explore each contract's reference to get a deep understanding of everything that's possible within the contract
+Explore any contract to get a deep understanding of what it can do
 
-### Item
-
-{% content-ref url="item/overview.md" %}
-[overview.md](item/overview.md)
+{% content-ref url="contracts/item/" %}
+[item](contracts/item/)
 {% endcontent-ref %}
 
-### Match
-
-{% content-ref url="match/overview.md" %}
-[overview.md](match/overview.md)
+{% content-ref url="contracts/player/" %}
+[player](contracts/player/)
 {% endcontent-ref %}
 
-### Player
-
-{% content-ref url="player/overview.md" %}
-[overview.md](player/overview.md)
+{% content-ref url="contracts/match/" %}
+[match](contracts/match/)
 {% endcontent-ref %}
 
-### Namespace
-
-{% content-ref url="namespace/overview.md" %}
-[overview.md](namespace/overview.md)
+{% content-ref url="contracts/namespace/" %}
+[namespace](contracts/namespace/)
 {% endcontent-ref %}
 
-### Staking
-
-{% content-ref url="staking/overview.md" %}
-[overview.md](staking/overview.md)
+{% content-ref url="contracts/staking/" %}
+[staking](contracts/staking/)
 {% endcontent-ref %}

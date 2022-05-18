@@ -32,4 +32,4 @@ This updates the Item instance with the new `ItemUsageStates` that may arise fro
 {% endtab %}
 {% endtabs %}
 
-Similar logic exists for the [Player](../player/overview.md) contract.
+Similar logic exists for the [Player](broken-reference) contract.

@@ -19,22 +19,16 @@
 * [Overview](guides/overview.md)
 * [Create an Item for NFT](guides/create-an-item-for-nft.md)
 
-## Item
+## Contracts
 
-* [Overview](item/overview.md)
-
-## Player
-
-* [Overview](player/overview.md)
-
-## Match
-
-* [Overview](match/overview.md)
-
-## Namespace
-
-* [Overview](namespace/overview.md)
-
-## Staking
-
-* [Overview](staking/overview.md)
+* [Overview](contracts/overview.md)
+* [Item](contracts/item/README.md)
+  * [Overview](contracts/item/overview.md)
+* [Player](contracts/player/README.md)
+  * [Overview](contracts/player/overview.md)
+* [Match](contracts/match/README.md)
+  * [Overview](contracts/match/overview.md)
+* [Namespace](contracts/namespace/README.md)
+  * [Overview](contracts/namespace/overview.md)
+* [Staking](contracts/staking/README.md)
+  * [Overview](contracts/staking/overview.md)
