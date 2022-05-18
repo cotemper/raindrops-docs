@@ -3,12 +3,16 @@
 * [Raindrops Protocol](README.md)
 * [Introduction](introduction.md)
 * [Quick Start](quick-start.md)
-* [General Concepts](general-concepts/README.md)
-  * [Class Inheritance Structure](general-concepts/class-inheritance-structure.md)
-  * [SFTs and Inexpensive Gaming](general-concepts/sfts-and-inexpensive-gaming.md)
-  * [Inheritance](general-concepts/inheritance.md)
-  * [Propagation](general-concepts/propagation.md)
-  * [Multiple Inheritance](general-concepts/multiple-inheritance.md)
+* [Concepts](concepts/README.md)
+  * [Class Inheritance Structure](concepts/class-inheritance-structure.md)
+  * [SFTs and Inexpensive Gaming](concepts/sfts-and-inexpensive-gaming.md)
+  * [Inheritance](concepts/inheritance.md)
+  * [Propagation](concepts/propagation.md)
+  * [Multiple Inheritance](concepts/multiple-inheritance.md)
+  * [Permissions](concepts/permissions.md)
+  * [Propagation Permission](concepts/propagation-permission.md)
+  * [Namespaces](concepts/namespaces.md)
+  * [Indexing](concepts/indexing.md)
 
 ## Guides
 
