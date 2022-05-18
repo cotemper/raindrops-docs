@@ -38,9 +38,3 @@
 ## Staking
 
 * [Overview](staking/overview.md)
-
-## Reference
-
-* [API Reference](reference/api-reference/README.md)
-  * [Namespace](reference/api-reference/namespace.md)
-  * [Item](reference/api-reference/item.md)
