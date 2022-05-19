@@ -1,3 +1,5 @@
 # Overview
 
-The only contract that is live presently is the Item and Match Contract. Others will be added as they are released.
+{% hint style="warning" %}
+The only contracts that are live presently are the Item and Match contracts. Others will be added as they are released.
+{% endhint %}

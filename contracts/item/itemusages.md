@@ -1,6 +1,8 @@
 # ItemUsages
 
-An Item can be used as either a Consumable or Wearable. In fact, an Item can have many ItemUsages describing the different ways in which it may be used. For example, it may be that a legendary sword could both be worn and used in a spell - these are two different ItemUsages in the array. Both ItemUsages can have BasicItemEffects, which look like this:
+An Item can be used as either a `Consumable` or `Wearable`. In fact, an Item can have many `ItemUsages` describing the different ways in which it may be used. For example, it may be that a legendary sword could both be worn and used in a spell - these are two different `ItemUsage`s in the array.
+
+Both `ItemUsage`s can have `BasicItemEffect`s, which look like this:
 
 ```rust
 #[derive(AnchorSerialize, AnchorDeserialize, Clone)]
@@ -18,7 +20,7 @@ pub struct BasicItemEffect {
 }
 ```
 
-The primary difference is in the ItemClassType enum of your ItemUsage, which allows for different data storage depending on whether this item is being worn or consumed:
+The primary difference is in the `ItemClassType` enum of your `ItemUsage`, which allows for different data storage depending on whether this item is being worn or consumed:
 
 ```rust
 #[derive(AnchorSerialize, AnchorDeserialize, Clone)]
@@ -38,13 +40,15 @@ pub enum ItemClassType {
 }
 ```
 
-The Wearable enum is focused on scoping and limiting on a per-body-part basis, which is similar to the component scoping used by the Components array. It is up to the enclosing contract to enforce this. The Consumable enum revolves around setting usage limits, how many players can use it in a given use, warmups and cooldowns.
+The `Wearable` enum is focused on scoping and limiting on a per-body-part basis, which is similar to the component scoping used by the `Components` array. It is up to the enclosing contract to enforce this.&#x20;
+
+The `Consumable` enum revolves around setting usage limits, how many players can use it in a given use, warmups and cooldowns.
 
 {% hint style="info" %}
-You may have noticed that both an BasicItemEffects, and the ItemUsage itself, both can have max\_uses. This is so that you can have different effects wear down before the item as a whole does.
+You may have noticed that both an `BasicItemEffect`s, and the `ItemUsage` itself, both can have `max_uses`. This is so that you can have different effects wear down before the item as a whole does.
 {% endhint %}
 
-There are a few ItemUsageTypes you can use:
+There are a few `ItemUsageTypes` you can use:
 
 ```rust
 #[derive(AnchorSerialize, AnchorDeserialize, Clone, PartialEq)]
@@ -56,16 +60,16 @@ pub enum ItemUsageType {
 ```
 
 {% hint style="info" %}
-Please note that Exhaustion is not an allowable ItemUsageType for SFTs, nor is max\_uses > 1.
+Please note that `Exhaustion` is not an allowable `ItemUsageType` for SFTs, nor is `max_uses` > 1.
 {% endhint %}
 
-Exhaustion means an Item will not be destroyed once max\_uses hits zero (and max\_uses is required for Exhaustion), but it will be rendered unusable for this particular ItemUsage.
+`Exhaustion` means an Item will not be destroyed once `max_uses` hits zero (and `max_uses` is required for `Exhaustion`), but it will be rendered unusable for this particular `ItemUsage`.
 
-Destruction means when max\_uses hit zero (and it must be set for Destruction) will cause a token to be burned. For SFTs, with their required max\_uses == 1, this means one token is burned per use.
+`Destruction` means when `max_uses` hit zero (and it must be set for `Destruction`) will cause a token to be burned. For SFTs, with their required `max_uses` == 1, this means one token is burned per use.
 
-Infinite is self-explanatory - max\_uses is ignored or unset, and the item can be used forever. Not applicable to SFTs.
+`Infinite` is self-explanatory - `max_uses` is ignored or unset, and the item can be used forever. Not applicable to SFTs.
 
-When you define an ItemUsage, it gets a corresponding ItemUsageState in any Item instance to keep track of usage, and cooldowns:
+When you define an `ItemUsage`, it gets a corresponding `ItemUsageState` in any `Item` instance to keep track of usage, and cooldowns:
 
 ```rust
 #[derive(AnchorSerialize, AnchorDeserialize, Clone)]
@@ -80,7 +84,7 @@ Obviously SFTs cannot have such state as all tokens in the SFT mint share the sa
 
 ## Callbacks and Validation
 
-Just a side note, each ItemUsage can have its own validation and callback (both of type Callback). Validations are CPIs that are called when the item is being activated, whereas callbacks are intended to be CPI’d from the enclosing contract when it is enacting the Item’s changes on its target(s). Here’s what a Callback looks like:
+Just a side note, each `ItemUsage` can have its own validation and callback (both of type `Callback`). Validations are CPIs that are called when the item is being activated, whereas callbacks are intended to be CPI’d from the enclosing contract when it is enacting the `Item`’s changes on its target(s). Here’s what a Callback looks like:
 
 ```rust
 #[derive(AnchorSerialize, AnchorDeserialize, Clone)]
@@ -90,7 +94,7 @@ pub struct Callback {
 }
 ```
 
-An example validation that will work on prod is a dummy endpoint added to the stubbed out Namespace contract. Here’s an example ItemUsage from an ItemClass definition JSON used for create\_item\_class calls that will make this work:
+An example validation that will work on prod is a dummy endpoint added to the stubbed out Namespace contract. Here’s an example `ItemUsage` from an `ItemClass` definition JSON used for `create_item_class` calls that will make this work:
 
 ```json
 {
@@ -115,4 +119,4 @@ An example validation that will work on prod is a dummy endpoint added to the st
         }
 ```
 
-Feel free to experiment with this. The additional “code” is a u64 that is passed in just after the 8 bytes describing the instruction so it can be used for additional filtering. The contract implementing this must have a method called “item\_validation” in its main module and must be an Anchor contract.
+Feel free to experiment with this. The additional `code` is a `u64` that is passed in just after the 8 bytes describing the instruction so it can be used for additional filtering. The contract implementing this must have a method called `item_validation` in its `main` module and must be an Anchor contract.

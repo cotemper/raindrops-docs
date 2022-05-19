@@ -1,7 +1,6 @@
 # Table of contents
 
-* [Raindrops Protocol](README.md)
-* [Introduction](introduction.md)
+* [Introduction](README.md)
 * [Quick Start](quick-start.md)
 * [Concepts](concepts/README.md)
   * [Class Inheritance Structure](concepts/class-inheritance-structure.md)
