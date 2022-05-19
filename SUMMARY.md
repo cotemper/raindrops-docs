@@ -27,7 +27,7 @@
   * [Components](contracts/item/components.md)
   * [ItemUsages](contracts/item/itemusages.md)
   * [Class Definition](contracts/item/class-definition.md)
-  * [Build Process](contracts/item/build-process.md)
+  * [Build](contracts/item/build.md)
   * [Item Activation Process](contracts/item/item-activation-process.md)
 * [Player](contracts/player/README.md)
   * [Overview](contracts/player/overview.md)
