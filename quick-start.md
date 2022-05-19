@@ -1,5 +1,9 @@
 # Quick Start
 
+{% hint style="warning" %}
+The Raindrops Protocol is in an alpha state and presently only two contracts are eligible for use on Mainnet-Beta (Item and Matches Contract). While we will try to maintain the integrity of PDAs created as contract development iterates, there is no guarantee that this will be possible.
+{% endhint %}
+
 ## Install the CLI
 
 To install the CLI at your global level and not tinker with the code directly, use:
@@ -15,7 +19,7 @@ Commands can now be run using the raindrops-cli commands
 items-cli show_item_class -k <keypair> --env devnet -cp example-configs/itemClass.json
 ```
 
-## Working in Developer Mode
+## Work in Developer Mode
 
 If you want to work with the codebase to make updates and interact with the contracts you can clone the github repo and run yarn watch from the `js` folder or use `ts-node` to execute client scripts directly without transpiling typescript to javascript.
 

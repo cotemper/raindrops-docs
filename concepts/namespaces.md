@@ -48,7 +48,7 @@ pub struct Namespace {
 
 Note that even `Namespace` has a namespaces section that can be used to join it to other namespaces, making it composable. Any artifact can join a namespace if it has this optional array up front with available slots (defined and set on creation).
 
-Joining a namespace is done through the [namespace contract](broken-reference).
+Joining a namespace is done through the [namespace contract](../namespace/overview.md).
 
 {% hint style="info" %}
 It is not required to have a namespace for your raindrops artifacts.

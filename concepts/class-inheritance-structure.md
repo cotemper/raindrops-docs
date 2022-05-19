@@ -4,7 +4,7 @@ It is a pain to have to redefine the _same_ stats for different player or item N
 
 An object class can inherit from another, and all existing object instances should inherit from an existing object class NFT.&#x20;
 
-Both the [Player](broken-reference) and [Item](broken-reference) contract behave this way, with `PlayerClass` structs and `ItemClass` structs living on top of their own NFTs where configuration data is stored, and the actual Player and Item instance structs being slimmed down structs that only contain stateful information specific to that NFT.
+Both the [Player](../player/overview.md) and [Item](../item/overview.md) contract behave this way, with `PlayerClass` structs and `ItemClass` structs living on top of their own NFTs where configuration data is stored, and the actual Player and Item instance structs being slimmed down structs that only contain stateful information specific to that NFT.
 
 For an example of this, here is an `ItemUsage`(Object class, configuration data) and an `ItemUsageState`(Object instance, stateful information):
 
