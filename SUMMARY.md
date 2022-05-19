@@ -28,7 +28,7 @@
   * [ItemUsages](contracts/item/itemusages.md)
   * [Class Definition](contracts/item/class-definition.md)
   * [Build](contracts/item/build.md)
-  * [Item Activation Process](contracts/item/item-activation-process.md)
+  * [Item Activation](contracts/item/item-activation.md)
 * [Player](contracts/player/README.md)
   * [Overview](contracts/player/overview.md)
 * [Match](contracts/match/README.md)
