@@ -1,4 +1,4 @@
-# Class Definition Process
+# Class Definition
 
 To define a class, you’ll need to start with a JSON file:
 
