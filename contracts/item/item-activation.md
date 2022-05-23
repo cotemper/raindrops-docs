@@ -19,6 +19,10 @@ To activate an `Item`, you issue a `begin_item_activation` call with a JSON file
 }
 ```
 
+{% hint style="info" %}
+itemMarkerSpace must have a value in the range of 20 to 66, inclusive
+{% endhint %}
+
 ```bash
 item-cli begin_item_activation \
          -k <keypair> \
