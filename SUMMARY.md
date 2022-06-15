@@ -1,6 +1,14 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Description](description/README.md)
+  * [Basic](description/basic.md)
+  * [Advanced](description/advanced/README.md)
+    * [Game](description/advanced/game.md)
+    * [Item](description/advanced/item.md)
+    * [Player](description/advanced/player.md)
+    * [Match](description/advanced/match.md)
+    * [Staking](description/advanced/staking.md)
 * [Quick Start](quick-start.md)
 * [Concepts](concepts/README.md)
   * [Class Inheritance Structure](concepts/class-inheritance-structure.md)

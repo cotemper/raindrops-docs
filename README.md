@@ -16,6 +16,18 @@ The protocol source is available on GitHub:
 The Raindrops Protocol is in an alpha state and presently only two contracts are eligible for use on Mainnet-Beta (Item and Matches Contract). While we will try to maintain the integrity of PDAs created as contract development iterates, there is no guarantee that this will be possible.
 {% endhint %}
 
+## Explainer
+
+Learn about what's possible with the raindrops protocol. Two levels of explanation is available:
+
+{% content-ref url="description/basic.md" %}
+[basic.md](description/basic.md)
+{% endcontent-ref %}
+
+{% content-ref url="description/advanced/" %}
+[advanced](description/advanced/)
+{% endcontent-ref %}
+
 ## Quick Start
 
 Jump in to the quick start docs and start making your first game's objects with raindrops:
