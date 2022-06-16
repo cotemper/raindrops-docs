@@ -23,7 +23,7 @@ If you want to work with the codebase to make updates and interact with the cont
 {% tab title="ts-node" %}
 ```bash
 npm install -g ts-node
-ts-node js/src/cli/item.ts show_item_class -k <keypair> --env devnet -cp js/example-configs/itemClass.json
+ts-node js/src/cli/item.ts show_item_class -k <keypair> --env devnet -cp js/example-configs/item/itemClass.json
 ```
 {% endtab %}
 
@@ -33,7 +33,7 @@ npm install -g yarn
 cd js
 yarn
 yarn watch   # From another terminal (command takes over the current terminal)
-node build/cli/item.js show_item_class -k <keypair> --env devnet -cp example-configs/itemClass.json
+node build/cli/item.js show_item_class -k <keypair> --env devnet -cp example-configs/item/itemClass.json
 ```
 {% endtab %}
 {% endtabs %}
@@ -41,5 +41,5 @@ node build/cli/item.js show_item_class -k <keypair> --env devnet -cp example-con
 ## Getting Help!
 
 {% hint style="info" %}
-For the time being, as this is partially a Degeniverse product and partially an open source product, you can get help from the developers in the `raindrops-protocol` channel of the DTP discord: [https://discord.gg/5yjMKVbC](https://discord.gg/5yjMKVbC).&#x20;
+For the time being, as this is partially a Degeniverse product and partially an open source product, you can get help from the developers in the `raindrops-protocol` channel of the DTP discord: [https://discord.gg/5yjMKVbC](https://discord.gg/5yjMKVbC).
 {% endhint %}
