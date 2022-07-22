@@ -14,11 +14,11 @@ A brand new game will have more freedom to use raindrops in it's entirety from t
 
 ## What does it make possible?
 
-What does this mean for gaming and what even is an ecosystem of connected games?&#x20;
+What does this mean for gaming and what even is an ecosystem of connected games?
 
-Just like bitcoin introduced a trust-less way for anyone in the world to create and access transaction information for a currency moving from one wallet to another. Raindrops does this for gaming, but it's not specific to a game's economic transactions.&#x20;
+Just like bitcoin introduced a trust-less way for anyone in the world to create and access transaction information for a currency moving from one wallet to another. Raindrops does this for gaming, but it's not specific to a game's economic transactions.
 
-The types of data raindrops makes available consists of [items](advanced/item.md), [players](advanced/player.md), [games](advanced/game.md), [matches](advanced/match.md) and [staking](advanced/staking.md). Having this data available on-chain enables games to do very cool things that have just never been possible, or were prohibitively expensive to do.&#x20;
+The types of data raindrops makes available consists of [items](advanced/item.md), [players](advanced/player.md), [games](advanced/game.md), [matches](advanced/match.md) and [staking](advanced/staking.md). Having this data available on-chain enables games to do very cool things that have just never been possible, or were prohibitively expensive to do.
 
 We should first break down why this actually matters for gaming (it's actually applicable beyond gaming, but let's start there) so we can better understand what it actually means.
 
@@ -48,11 +48,11 @@ Even more interestingly, it doesn't have to just be other games that use the dat
 
 Best of all, the data is verified to be accurate since it uses the same mechanisms used when sending tokens(currency, NFTs, etc...) from one wallet to another. Games can now trust that an item and it's data hasn't been tampered with and the game that updated it is who they claim to be.
 
-In addition, raindrops is powered by the $RAIN token. The $RAIN token greatly reduces the legal barrier and financial expense required for a game to have a registered legal economy of value within and outside of their games. This token allows games to share/bridge their economies. When games support the same token, the economy of gaming can grow as a whole, together. It also reduces friction for the gamer to play different games.
+In addition, raindrops is compatible with the $RAIN token. The $RAIN token reduces friction for the gamer to play different games.
 
-We don't believe the future of gaming is to have a different token for every game you want to play. We don't know about you, but we don't want to have 10+ different gaming tokens in our wallets to play the games we love.&#x20;
+We don't believe the future of gaming is to have a different token for every game you want to play. We don't know about you, but we don't want to have 10+ different gaming tokens in our wallets to play the games we love.
 
-The $RAIN token is optional for use within the game's economy. If a game already has their own token and they want to continue using it, raindrops does support any SPL mint for gameplay costs, rewards, or staking. However, the "gas/rent fee" for using raindrops is and will always be $RAIN. More details about $RAIN will be made available in this book.
+If a game already has their own token and they want to continue using it, raindrops does support any SPL mint for gameplay costs, rewards, or staking.
 
 ## Again, What does this make possible?
 
